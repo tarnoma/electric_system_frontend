@@ -7,7 +7,8 @@ import axios from "axios";
 // good idea to move this instance creation inside of the
 // "export default () => {}" function below (which runs individually
 // for each client)
-const RESTURL = "http://localhost:4000/api"; // need to create backend first
+// const RESTURL = "http://localhost:4000/api"; // need to create backend first
+const RESTURL = "https://electric-system-api.vercel.app/api";
 const api = axios.create({
   baseURL: RESTURL,
   headers: { "Content-type": "application/json" },
